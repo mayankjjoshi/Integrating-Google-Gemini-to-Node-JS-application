@@ -23,7 +23,7 @@ const responsePrompt = async(req, res) => {
         const prompt = req.body.prompt;
         const result = await generate(prompt);
         res.send({
-            "Result ": result
+            "Result": result
         });
     } catch (error) {
         console.log(`Error : ${error}`); 
